@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mediation App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <main class="dashboard-wrapper">
+            
+            <div class="dashboard-container">
+            
+                <div class="content-wrapper content-wrapper--register">
+                    
+                    <h1 class="register-title">Register</h1>
+
+                    <div class="before-register-form">
+                        <span class="text">Are you a</span>
+                        <button class="link-button link-button--small" data-role="student">Student</button>
+                        <span class="text">or</span>
+                        <button class="link-button link-button--small link-button--light" data-role="teacher">Teacher</button>
+                    </div>
+
+                    <form class="form" id="register-form">
+                        <input type="hidden" name="role" value="student">
+                        <input type="text" name="name" class="form-input" placeholder="Name">
+                        <input type="text" name="email" class="form-input" placeholder="Email">
+                        <input type="password" name="password" class="form-input" placeholder="Password">
+                        <input type="password" name="repeat_password" class="form-input" placeholder="Repeat password">
+                        <button type="submit" class="link-button link-button--small form-submit">Register</button>
+                    </form>
+                    
+                    <div class="or-wrapper">
+                        <span class="or-text">OR</span>
+                    </div>
+
+                    <div class="options">
+                        <a href="#" class="link-button link-button--small options__item">Log in with Zoom</a>
+                    </div>
+            
+                </div> <!-- /content-wrapper --> 
+            
+            </div> <!-- /dashboard-container -->
+
+        </main>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</html>

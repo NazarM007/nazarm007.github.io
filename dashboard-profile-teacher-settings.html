@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mediation App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <main class="dashboard-wrapper">
+            
+            <section class="dashboard-sidebar">
+                <a href="index.html"><img src="assets/img/img-placeholder-logo.png" class="dashboard-sidebar__logo"></a>
+                <div class="dashboard-sidebar__item dashboard-sidebar__item--dropdown dashboard-sidebar__item--profile-dropdown active">
+                    <div class="profile-image"></div>
+                    <span class="title">Name</span>
+                    <svg class="dropdown-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.59 0.589844L6 5.16984L1.41 0.589844L0 1.99984L6 7.99984L12 1.99984L10.59 0.589844Z" fill="#707881"/>
+                    </svg>
+                </div>
+                <ul class="dropdown-items">
+                    <li><a href="#" class="active">Profile</a></li>
+                    <li><a href="#">Sign out</a></li>
+                </ul>
+                <a href="#" class="dashboard-sidebar__item">
+                    <div class="circle"></div>
+                    <span class="title">Dashboard</span>
+                </a>
+                <div class="dashboard-sidebar__item dashboard-sidebar__item--dropdown">
+                    <div class="circle"></div>
+                    <span class="title">Spaces</span>
+                    <svg class="dropdown-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.59 0.589844L6 5.16984L1.41 0.589844L0 1.99984L6 7.99984L12 1.99984L10.59 0.589844Z" fill="#707881"/>
+                    </svg>
+                </div>
+                <ul class="dropdown-items">
+                    <li><a href="#">Space 1</a></li>
+                    <li><a href="#">Space 2</a></li>
+                    <li><a href="#">Space 3</a></li>
+                    <li><a href="#">Space 4</a></li>
+                    <li><a href="#">Space 5</a></li>
+                    <li><a href="#">Space 6</a></li>
+                </ul>
+                <div class="dashboard-sidebar__item dashboard-sidebar__item--dropdown">
+                    <div class="circle"></div>
+                    <span class="title">Settings</span>
+                    <svg class="dropdown-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.59 0.589844L6 5.16984L1.41 0.589844L0 1.99984L6 7.99984L12 1.99984L10.59 0.589844Z" fill="#707881"/>
+                    </svg>
+                </div>
+                <ul class="dropdown-items">
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Payment plan</a></li>
+                </ul>
+            </section>
+
+            <section class="dashboard-container">
+            
+                <div class="content-wrapper content-wrapper--edit-profile modal">
+                    <h1 class="modal__title">Edit profile information</h1>
+
+                    <div class="image-settings">
+                        <div class="cover-image" data-image-wrapper="teacher-cover-image">
+                            <div class="edit-button" data-action="file-input">
+                                <svg class="pencil-icon" width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.429688 11.4891V14.3378H3.03703L10.727 5.93607L8.11962 3.08737L0.429688 11.4891ZM12.7433 3.73307C13.0145 3.43681 13.0145 2.95823 12.7433 2.66196L11.1163 0.884369C10.8452 0.588104 10.4071 0.588104 10.136 0.884369L8.86358 2.27454L11.4709 5.12324L12.7433 3.73307Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <input type="file" class="form-input--hidden" data-form-input-name="teacher-cover-image" data-image-wrapper="teacher-cover-image">
+                        </div>
+                        <div class="profile-image" data-image-wrapper="teacher-profile-image">
+                            <div class="edit-button" data-action="file-input">
+                                <svg class="pencil-icon" width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.429688 11.4891V14.3378H3.03703L10.727 5.93607L8.11962 3.08737L0.429688 11.4891ZM12.7433 3.73307C13.0145 3.43681 13.0145 2.95823 12.7433 2.66196L11.1163 0.884369C10.8452 0.588104 10.4071 0.588104 10.136 0.884369L8.86358 2.27454L11.4709 5.12324L12.7433 3.73307Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <input type="file" class="form-input--hidden" data-form-input-name="teacher-profile-image" data-image-wrapper="teacher-profile-image">
+                        </div>
+                    </div> <!-- /image-settings -->
+
+                    <form class="modal__form modal__form--profile" id="profile-teacher-form">
+                        
+                        <input type="hidden" name="cover_image" value="" data-form-input-name="teacher-cover-image">
+                        <input type="hidden" name="profile_image" value="" data-form-input-name="teacher-profile-image">
+
+                        <div class="label">
+                            <p class="label__title">Name</p>
+                            <div class="label__input-wrapper">
+                                <input type="text" name="name" class="form-input" placeholder="Name Surname">
+                            </div>
+                        </div> <!-- /label -->
+
+                        <div class="label">
+                            <p class="label__title">Facebook</p>
+                            <div class="label__input-wrapper">
+                                <input type="text" name="facebook" class="form-input" placeholder="Facebook profile link">
+                            </div>
+                        </div> <!-- /label -->
+
+                        <div class="label">
+                            <p class="label__title">Instagram</p>
+                            <div class="label__input-wrapper">
+                                <input type="text" name="instagram" class="form-input" placeholder="Instagram profile link">
+                            </div>
+                        </div> <!-- /label -->
+
+                        <div class="label">
+                            <p class="label__title">Twitter</p>
+                            <div class="label__input-wrapper">
+                                <input type="text" name="twitter" class="form-input" placeholder="Twitter profile link">
+                            </div>
+                        </div> <!-- /label -->
+
+                        <div class="label">
+                            <p class="label__title">Website</p>
+                            <div class="label__input-wrapper">
+                                <input type="text" name="website" class="form-input" placeholder="Website link">
+                            </div>
+                        </div> <!-- /label -->
+
+                        <div class="label">
+                            <p class="label__title">Short bio</p>
+                            <div class="label__input-wrapper">
+                                <textarea type="text" name="short_description" class="form-input" placeholder="Short bio"></textarea>
+                            </div>
+                        </div> <!-- /label -->
+
+                        <div class="label">
+                            <p class="label__title">Full bio</p>
+                            <div class="label__input-wrapper">
+                                <textarea type="text" name="description" class="form-input" placeholder="Full bio"></textarea>
+                            </div>
+                        </div> <!-- /label -->
+
+                        <div class="label">
+                            <p class="label__title"></p>
+                            <div class="label__input-wrapper">
+                                <div class="buttons-wrapper">
+                                    <button type="button" class="link-button link-button--small link-button--light">Preview public profile</button>
+                                    <button type="submit" class="link-button link-button--small">Save changes</button>
+                                </div>
+                            </div>
+                        </div> <!-- /label -->
+
+                        <div class="label">
+                            <p class="label__title"></p>
+                            <div class="label__input-wrapper">
+                                <p class="form-notification">Profile updated successfully!</p>
+                            </div>
+                        </div> <!-- /label -->                        
+
+                    </form> <!--/modal__form--profile -->
+
+                </div> <!-- /content-wrapper --> 
+            
+            </section> <!-- /dashboard-container -->
+
+        </main>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</html>

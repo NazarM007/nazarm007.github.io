@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mediation App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <main class="dashboard-wrapper">
+            
+            <section class="dashboard-sidebar">
+                <a href="index.html"><img src="assets/img/img-placeholder-logo.png" class="dashboard-sidebar__logo"></a>
+                <div class="dashboard-sidebar__item dashboard-sidebar__item--dropdown dashboard-sidebar__item--profile-dropdown">
+                    <div class="profile-image"></div>
+                    <span class="title">Name</span>
+                    <svg class="dropdown-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.59 0.589844L6 5.16984L1.41 0.589844L0 1.99984L6 7.99984L12 1.99984L10.59 0.589844Z" fill="#707881"/>
+                    </svg>
+                </div>
+                <ul class="dropdown-items">
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Sign out</a></li>
+                </ul>
+                <a href="#" class="dashboard-sidebar__item">
+                    <div class="circle"></div>
+                    <span class="title">Dashboard</span>
+                </a>
+                <div class="dashboard-sidebar__item dashboard-sidebar__item--dropdown">
+                    <div class="circle"></div>
+                    <span class="title">Spaces</span>
+                    <svg class="dropdown-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.59 0.589844L6 5.16984L1.41 0.589844L0 1.99984L6 7.99984L12 1.99984L10.59 0.589844Z" fill="#707881"/>
+                    </svg>
+                </div>
+                <ul class="dropdown-items">
+                    <li><a href="#">Space 1</a></li>
+                    <li><a href="#">Space 2</a></li>
+                    <li><a href="#">Space 3</a></li>
+                    <li><a href="#">Space 4</a></li>
+                    <li><a href="#">Space 5</a></li>
+                    <li><a href="#">Space 6</a></li>
+                </ul>
+                <div class="dashboard-sidebar__item dashboard-sidebar__item--dropdown active">
+                    <div class="circle"></div>
+                    <span class="title">Settings</span>
+                    <svg class="dropdown-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.59 0.589844L6 5.16984L1.41 0.589844L0 1.99984L6 7.99984L12 1.99984L10.59 0.589844Z" fill="#707881"/>
+                    </svg>
+                </div>
+                <ul class="dropdown-items">
+                    <li><a href="#" class="active">Account</a></li>
+                    <li><a href="#">Payment plan</a></li>
+                </ul>
+            </section>
+
+            <section class="dashboard-container">
+            
+                <div class="content-wrapper content-wrapper--edit-profile modal">
+                    <h1 class="modal__title">Account settings</h1>
+
+                    <div class="modal__form modal__form--account">
+
+                        <form id="account-teacher-form-email">
+                            
+                            <div class="label">
+                                <p class="label__title label__title--center">Email</p>
+                                <div class="label__input-wrapper">
+                                    <input type="text" name="email" class="form-input" placeholder="Email@email.com">
+                                </div>
+                            </div> <!-- /label -->
+
+                            <div class="label">
+                                <p class="label__title"></p>
+                                <div class="label__input-wrapper">
+                                    <div class="buttons-wrapper">
+                                        <button type="submit" class="link-button link-button--small">Save</button>
+                                    </div>
+                                </div>
+                            </div> <!-- /label -->
+                            
+                        </form> <!-- /account-teacher-form-email -->
+
+                        <div class="label label--big-margin">
+                            <p class="label__title label__title--big">Change password</p>
+                        </div> <!-- /label -->
+
+                        <form id="account-teacher-form-password">
+                            
+                            <div class="label">
+                                <p class="label__title">Current password</p>
+                                <div class="label__input-wrapper">
+                                    <input type="password" name="current_password" class="form-input" placeholder="Current password">
+                                </div>
+                            </div> <!-- /label -->
+                            
+                            <div class="label">
+                                <p class="label__title">New password</p>
+                                <div class="label__input-wrapper">
+                                    <input type="password" name="new_password" class="form-input" placeholder="New password">
+                                </div>
+                            </div> <!-- /label -->
+                            
+                            <div class="label">
+                                <p class="label__title">Repeat password</p>
+                                <div class="label__input-wrapper">
+                                    <input type="password" name="repeat_password" class="form-input" placeholder="Repeat password">
+                                </div>
+                            </div> <!-- /label -->
+
+                            <div class="label">
+                                <p class="label__title"></p>
+                                <div class="label__input-wrapper">
+                                    <div class="buttons-wrapper">
+                                        <button type="submit" class="link-button link-button--small">Save</button>
+                                    </div>
+                                </div>
+                            </div> <!-- /label -->
+
+                        </form> <!-- /account-teacher-form-password -->
+
+                        <div class="label label--big-margin">
+                            <p class="label__title label__title--big">Linked accounts</p>
+                        </div> <!-- /label -->
+
+                        <form id="account-teacher-form-linked-accounts">
+                            
+                            <div class="label">
+                                <p class="label__title">Zoom</p>
+                                <div class="label__input-wrapper">
+                                    <input type="password" name="zoom" class="form-input" placeholder="Zoom profile link">
+                                </div>
+                            </div> <!-- /label -->
+                            
+                            <div class="label">
+                                <p class="label__title">Paypal</p>
+                                <div class="label__input-wrapper">
+                                    <input type="password" name="paypal" class="form-input" placeholder="Paypal profile link">
+                                </div>
+                            </div> <!-- /label -->
+
+                            <div class="label">
+                                <p class="label__title"></p>
+                                <div class="label__input-wrapper">
+                                    <div class="buttons-wrapper">
+                                        <button type="submit" class="link-button link-button--small">Save</button>
+                                    </div>
+                                </div>
+                            </div> <!-- /label -->
+
+                        </form> <!-- /account-teacher-form-linked-accounts -->
+
+                    </div> <!--/modal__form--account -->
+
+                </div> <!-- /content-wrapper --> 
+            
+            </section> <!-- /dashboard-container -->
+
+        </main>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</html>
